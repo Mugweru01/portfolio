@@ -1,0 +1,74 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Enable smooth scrolling for in‑page anchors */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Global Background & Text Colors for the Entire Website (60% Black) */
+body {
+  @apply bg-black text-gray-100;
+}
+
+/* Custom Navbar Styles */
+.navbar {
+  @apply bg-gradient-to-r from-black to-[#005F3C] shadow-lg sticky top-0 z-50;
+}
+.navbar-container {
+  @apply container mx-auto px-4 py-4 flex justify-between items-center;
+}
+.navbar-brand {
+  @apply text-xl font-bold text-white;
+}
+.navbar-link {
+  @apply hover:text-[#C9B037] cursor-pointer;
+}
+
+/* Buttons */
+.btn-primary {
+  @apply bg-[#005F3C] text-white font-semibold py-2 px-4 rounded hover:bg-[#003D29] transition;
+}
+
+/* Accent Elements (10% Gold Accent) */
+.accent-border {
+  @apply border-[#C9B037];
+}
+.accent-text {
+  @apply text-[#C9B037];
+}
+
+/* Card Styles (for experience, certifications, etc.) */
+.card {
+  @apply bg-[#0A0A0A] p-6 rounded-lg shadow-lg transform transition duration-300 hover:scale-105 hover:bg-[#005F3C];
+}
+
+/* Input Field Styles (for Contact Page and forms) */
+.input-field {
+  @apply w-full p-3 bg-gray-800 text-white border border-gray-700 rounded focus:outline-none focus:border-[#C9B037] transition;
+}
+
+/* Label Styles */
+.input-label {
+  @apply block mb-2 text-sm font-medium text-gray-400;
+}
+
+/* Keyframes for Gradient Movement (for animated backgrounds) */
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+
+/* (Optional) Charge Effect */
+/*
+@keyframes charge {
+  from { background-color: transparent; }
+  to { background-color: #C9B037; }
+}
+
+.charge {
+  animation: charge 0.5s forwards;
+}
+*/
